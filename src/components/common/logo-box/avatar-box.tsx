@@ -51,34 +51,77 @@ export default function AvatarBox({ checked }: { checked?: boolean }) {
         xmlns="http://www.w3.org/2000/svg"
       >
         <rect width="400" height="400" fill="#18181B" />
-        <path
-          d="M238.088 51.1218L238.089 51.1223L310.605 92.8101C334.028 106.308 348.526 131.32 347.868 157.953L347.867 157.966V157.978V241.688C347.867 268.68 333.687 293.362 310.271 306.856L310.269 306.858L237.754 348.878C214.336 362.374 185.643 362.374 162.225 348.878L89.7127 306.859C66.6206 293.361 52.1113 268.674 52.1113 241.688V157.978C52.1113 131.326 66.6211 106.307 89.7088 92.8093C89.7101 92.8085 89.7114 92.8078 89.7127 92.807L162.556 51.1233L162.559 51.1218C185.977 37.6261 214.67 37.6261 238.088 51.1218ZM124.634 200C124.634 241.576 158.502 275.372 200.156 275.372C242.142 275.372 276.013 241.578 276.013 200C276.013 158.419 241.805 124.628 200.156 124.628C158.502 124.628 124.634 158.424 124.634 200Z"
-          fill="url(#paint0_linear_11869_12671)"
-          stroke="url(#paint1_linear_11869_12671)"
-          strokeWidth="2"
-        />
+        {/* Modern and cool stars SVG */}
+        <g>
+          <g>
+            <polygon
+              points="200,80 217,150 290,150 230,190 250,260 200,215 150,260 170,190 110,150 183,150"
+              fill="url(#starGradient1)"
+              stroke="white"
+              strokeWidth="4"
+              opacity="0.95"
+            />
+            <polygon
+              points="320,110 325,130 345,130 328,142 334,162 320,150 306,162 312,142 295,130 315,130"
+              fill="url(#starGradient2)"
+              stroke="white"
+              strokeWidth="2"
+              opacity="0.7"
+            />
+            <polygon
+              points="80,300 85,315 105,315 90,325 95,340 80,330 65,340 70,325 55,315 75,315"
+              fill="url(#starGradient3)"
+              stroke="white"
+              strokeWidth="2"
+              opacity="0.7"
+            />
+            <polygon
+              points="340,300 345,315 365,315 350,325 355,340 340,330 325,340 330,325 315,315 335,315"
+              fill="url(#starGradient4)"
+              stroke="white"
+              strokeWidth="2"
+              opacity="0.7"
+            />
+            <polygon
+              points="60,100 65,115 85,115 70,125 75,140 60,130 45,140 50,125 35,115 55,115"
+              fill="url(#starGradient5)"
+              stroke="white"
+              strokeWidth="2"
+              opacity="0.7"
+            />
+          </g>
+          <circle
+            cx="200"
+            cy="200"
+            r="60"
+            fill="url(#starGlow)"
+            opacity="0.25"
+          />
+        </g>
         <defs>
-          <linearGradient
-            id="paint0_linear_11869_12671"
-            x1="200"
-            y1="40"
-            x2="200"
-            y2="360"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="white" />
-            <stop offset="1" stopColor="white" stopOpacity="0.7" />
+          <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#fffbe6" stopOpacity="1" />
+            <stop offset="100%" stopColor="#fffbe6" stopOpacity="0" />
+          </radialGradient>
+          <linearGradient id="starGradient1" x1="200" y1="80" x2="200" y2="260" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#fffbe6" />
+            <stop offset="1" stopColor="#facc15" />
           </linearGradient>
-          <linearGradient
-            id="paint1_linear_11869_12671"
-            x1="200"
-            y1="40"
-            x2="200"
-            y2="360"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="white" stopOpacity="0" />
-            <stop offset="1" stopColor="white" stopOpacity="0.7" />
+          <linearGradient id="starGradient2" x1="320" y1="110" x2="320" y2="162" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#f0abfc" />
+            <stop offset="1" stopColor="#a21caf" />
+          </linearGradient>
+          <linearGradient id="starGradient3" x1="80" y1="300" x2="80" y2="340" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#bae6fd" />
+            <stop offset="1" stopColor="#0369a1" />
+          </linearGradient>
+          <linearGradient id="starGradient4" x1="340" y1="300" x2="340" y2="340" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#bbf7d0" />
+            <stop offset="1" stopColor="#15803d" />
+          </linearGradient>
+          <linearGradient id="starGradient5" x1="60" y1="100" x2="60" y2="140" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#fca5a5" />
+            <stop offset="1" stopColor="#b91c1c" />
           </linearGradient>
         </defs>
       </svg>
