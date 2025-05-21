@@ -103,7 +103,7 @@ var Login = () => {
   return /* @__PURE__ */ jsx("div", { className: "bg-ui-bg-subtle flex min-h-dvh w-dvw items-center justify-center", children: /* @__PURE__ */ jsxs("div", { className: "m-4 flex w-full max-w-[280px] flex-col items-center", children: [
     /* @__PURE__ */ jsx(AvatarBox, {}),
     /* @__PURE__ */ jsxs("div", { className: "mb-4 flex flex-col items-center", children: [
-      /* @__PURE__ */ jsx(Heading, { children: "welcome to meow meow test make changes test2" }),
+      /* @__PURE__ */ jsx(Heading, { children: "welcome to meow meow test make changes test3" }),
       /* @__PURE__ */ jsx(Text, { size: "small", className: "text-ui-fg-subtle text-center", children: t("login.hint") })
     ] }),
     /* @__PURE__ */ jsxs("div", { className: "flex w-full flex-col gap-y-3", children: [
