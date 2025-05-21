@@ -75,7 +75,7 @@ export const Login = () => {
       <div className="m-4 flex w-full max-w-[280px] flex-col items-center">
         <AvatarBox />
         <div className="mb-4 flex flex-col items-center">
-          <Heading>welcome to meow meow test make changes</Heading>
+          <Heading>welcome to meow meow test make changes test2</Heading>
           <Text size="small" className="text-ui-fg-subtle text-center">
             {t("login.hint")}
           </Text>
